@@ -8,6 +8,8 @@ import { InsightsPage } from './pages/InsightsPage'
 import { CoinPage } from './pages/CoinPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { Maintenance } from './pages/MaintenancePage'
+import { BlogPage } from './pages/BlogPage'
+import { BlogPost } from './pages/BlogPost'
 import './App.css'
 
 export function App() {
@@ -21,6 +23,8 @@ export function App() {
             <Route path="/price-tracker" element={<PriceTrackerPage />} />
             <Route path="/insights" element={<InsightsPage />} />
             <Route path="/coin/:id" element={<CoinPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="*" element={<NotFoundPage />} />
             <Route path="/maintenance" element={<Maintenance />} />
           </Routes>
